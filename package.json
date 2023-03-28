@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.js --bundle --platform=node --target=node16 --format=cjs --outfile=out.js",
+    "build": "esbuild index.js --bundle --platform=node --target=node16 --format=cjs --outfile=out.js --main-fields=module,main",
     "test": "npm run build && node out.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "esbuild": "0.17.14",
-    "statsig-node": "^5.4.0"
+    "statsig-node": "5.4.0-beta.8"
   }
 }
